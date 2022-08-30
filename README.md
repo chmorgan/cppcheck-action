@@ -19,13 +19,13 @@ detecting undefined behavior and dangerous coding constructs. The goal is to
 have very few false positives. Cppcheck is designed to be able to analyze your
 C/C++ code even if it has non-standard syntax (common in embedded projects).
 
-## How to use?
-
-Create `cppcheck.yml` under `.github/workflows` With the following contents
-
 ## What version of cppcheck is being used?
 
 cppcheck v2.9 is the present vesion
+
+## How to use?
+
+Create `cppcheck.yml` under `.github/workflows` With the following contents
 
 ### Default configuration
 
