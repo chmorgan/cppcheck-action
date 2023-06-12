@@ -207,8 +207,9 @@ def run(vector, where=SOURCE_ROOT, show_version=False, show_help=False):
     if DSL[OUTPUT_FILE] is not None:
       vector.append(f"--output-file={DSL[OUTPUT_FILE]}")
 
-    vector.append(f"{where}")
     print("executing static code analysis")
+
+    vector.append(f"{where}")
     print(f"  effective command: {' '.join(vector)}")
     print("output from analysis")
     try:
