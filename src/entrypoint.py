@@ -222,6 +222,8 @@ def run(vector, where=SOURCE_ROOT, show_version=False, show_help=False):
         print("details:")
         print(err.stdout.decode(ENCODING, errors="ignore"))
         return 1
+    except Exception as err:
+        print("caught exception", err)
 
     if not completed.returncode:  # currently cppcheck is happy to find no source file
         print("errors from execution")
